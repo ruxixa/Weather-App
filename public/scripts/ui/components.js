@@ -1,3 +1,11 @@
+/**
+ * components.js
+ *
+ * This file is responsible for updating the ui
+ * components with the weather data.
+ * 
+ * Author: ruxixa
+ */
 import { showMessagebox } from './messagebox.js';
 
 const weatherIcon = document.getElementById('weather-icon');

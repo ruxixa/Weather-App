@@ -1,6 +1,15 @@
-
-// List of countries with their respective latitude and longitude.
-// Feel free to add more countries to the list (its not complete yet).
+/**
+ * countries.js
+ *
+ * This file contains a list of countries 
+ * with their respective latitude and longitude.
+ * 
+ * The latitude and longitude are capital city coordinates.
+ * 
+ * Feel free to add more countries to the list.
+ * 
+ * Author: ruxixa
+ */
 export const countries = {
   "Poland": {latitude: 52.52, longitude: 19.40},
   "Germany": {latitude: 51.16, longitude: 10.45},
@@ -49,5 +58,5 @@ export const countries = {
   "Iraq": {latitude: 33.22, longitude: 43.68},
   "Ireland": {latitude: 53.41, longitude: -8.24},
   "Finland": {latitude: 61.92, longitude: 25.75},
-  "Ukraine": {latitude: 48.38, longitude: 31.17}
+  "Ukraine": {latitude: 48.38, longitude: 31.17}  
 };

@@ -1,3 +1,10 @@
+/**
+ * search.js
+ * 
+ * The script file that handles the search functionality
+ * 
+ * Author: ruxixa
+ */
 import { showMessagebox } from './ui/messagebox.js'; 
 import { getCurrentWeather } from './helpers/getWeather.js';
 import { updateWeatherInfo } from './ui/components.js';

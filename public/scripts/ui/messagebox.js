@@ -1,3 +1,11 @@
+/**
+ * messagebox.js
+ *
+ * This file is responsible for handling the message box
+ * functionality and displaying messages to the user.
+ * 
+ * Author: ruxixa
+ */
 export const messagebox = document.getElementById('messagebox');
 export const messageboxClose = document.getElementById('messagebox-close');
 

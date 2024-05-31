@@ -1,3 +1,11 @@
+/**
+ * index.js
+ * 
+ * The main process file that creates 
+ * the main window of the application.
+ * 
+ * Author: ruxixa
+ */
 const {app, BrowserWindow, ipcMain} = require('electron');
 
 // Keep a global reference of the window object, 

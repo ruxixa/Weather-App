@@ -1,3 +1,11 @@
+/**
+ * getWeather.js
+ *
+ * This file is responsible for fetching the current weather
+ * and returning the weather data.
+ * 
+ * Author: ruxixa
+ */
 import { countries } from './countries.js';
 import { showMessagebox } from '../ui/messagebox.js';
 
