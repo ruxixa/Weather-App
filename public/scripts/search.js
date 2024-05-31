@@ -60,8 +60,6 @@ document.addEventListener('DOMContentLoaded', function() {
   // Getting the user location and displaying the weather
   getUserLocation().then(location => {
     if (location && location.country_name) {
-      console.log(`User country: ${location.country_name}`);
-
       getCurrentWeather(location.country_name)
         .then(weather => {
           if (weather) {

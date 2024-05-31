@@ -13,18 +13,58 @@
 	font-family: "Poppins Light", sans-serif;
 }
 
+body {
+	width: 100vw;
+	height: 100vh;
+	background: rgb(131, 58, 180);
+	background: radial-gradient(
+		circle at top left,
+		var(--primary) 0%,
+		var(--secondary) 50%,
+		var(--accent) 100%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 30px;
+}
+
 svg {
 	color: var(--text);
 	cursor: pointer;
 }
 
 #navbar {
+	-webkit-user-select: none;
+  -webkit-app-region: drag;
 	position: fixed;
-	background-color: #8de7a1;
-	border-bottom: 2px solid rgba(255, 255, 255, 0.3);
-	height: 30px;
-	width: 100%;
 	top: 0;
+	border-width: 0  2px   2px    2px; 
+	border-style: none solid solid solid;
+	border-color: 
+		transparent 
+		rgba(255, 255, 255, 0.3) 
+		rgba(255, 255, 255, 0.3) 
+		rgba(255, 255, 255, 0.3);
+	height: 30px;
+	border-radius: 0 0 5px 5px; 
+	width: 60%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+#navbar svg {
+	margin: 0 3px;
+	width: 22px;
+  -webkit-app-region: no-drag;
+}
+
+/** 
+ * The last child of the navbar will have a margin-right of 10px
+ * This will create a space between the last child and the right edge of the navbar
+ * What is not possible directly with the justify-content: flex-end property
+ */
+#navbar > *:last-child {
+  margin-right: 10px; 
 }
 
 h1 {
@@ -65,6 +105,7 @@ button {
 	background-color: rgba(255, 255, 255, 0.4);
 	cursor: pointer;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	transition: box-shadow 0.3s ease;
 }
 
 button:hover {
@@ -77,19 +118,6 @@ input:hover {
 	outline: none;
 }
 
-body {
-	width: 100vw;
-	height: 100vh;
-	background: rgb(131, 58, 180);
-	background: radial-gradient(circle at top left,
-			var(--primary) 0%,
-			var(--secondary) 50%,
-			var(--accent) 100%);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
 #main-widget {
 	width: 60%;
 	height: 60%;
@@ -97,7 +125,6 @@ body {
 	top: 20%;
 	display: flex;
 	border-radius: 5px;
-	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
 	border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -105,6 +132,7 @@ body {
 #right-section,
 #navbar {
 	background-color: rgba(255, 255, 255, 0.4);
+	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
 }
 
 #left-section,
@@ -123,12 +151,10 @@ body {
 	position: absolute;
 	top: 20%;
 	border-radius: 5px;
-	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
 	border: 2px solid rgba(255, 255, 255, 0.3);
 	text-align: center;
 	box-sizing: border-box;
 	display: flex;
-	transition: box-shadow 0.3s ease;
 }
 
 #messagebox {
