@@ -1,0 +1,157 @@
+:root {
+	--text: #202020;
+	--background: #eafaec;
+	--primary: #8de7a1;
+	--secondary: #1c8780;
+	--accent: #30c4d5;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	color: var(--text);
+	font-family: "Poppins Light", sans-serif;
+}
+
+svg {
+	color: var(--text);
+	cursor: pointer;
+}
+
+#navbar {
+	position: fixed;
+	top: 0;
+}
+
+h1 {
+	font-size: 3rem;
+	margin-bottom: 20px;
+}
+
+p {
+	font-size: 1.8rem;
+	margin-bottom: 20px;
+}
+
+img {
+	width: 200px;
+	filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.1));
+}
+
+input,
+button {
+	transition: 0.3s ease;
+	font-size: 1.6rem;
+}
+
+input {
+	width: 60%;
+	padding: 10px;
+	margin: 10px 0;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+	margin-top: 10px;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.4);
+	cursor: pointer;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+input:focus,
+input:hover {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	outline: none;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background: rgb(131, 58, 180);
+	background: radial-gradient(circle at top left,
+			var(--primary) 0%,
+			var(--secondary) 50%,
+			var(--accent) 100%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#main-widget {
+	width: 60%;
+	height: 60%;
+	position: absolute;
+	top: 20%;
+	display: flex;
+	border-radius: 5px;
+	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+	border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+#main-widget,
+#right-section {
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+#left-section,
+#right-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+#main-widget {
+	width: 60%;
+	height: 60%;
+	position: absolute;
+	top: 20%;
+	border-radius: 5px;
+	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+	border: 2px solid rgba(255, 255, 255, 0.3);
+	text-align: center;
+	box-sizing: border-box;
+	display: flex;
+	transition: box-shadow 0.3s ease;
+}
+
+#messagebox {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	padding: 23px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	font-family: "Poppins Light", sans-serif;
+}
+
+#messagebox h2 {
+	font-size: 2rem;
+	margin-bottom: 10px;
+}
+
+#messagebox p {
+	font-size: 1.6rem;
+	margin-bottom: 10px;
+}
+
+#messagebox svg {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 30px;
+}
