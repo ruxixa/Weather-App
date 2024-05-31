@@ -20,6 +20,10 @@ svg {
 
 #navbar {
 	position: fixed;
+	background-color: #8de7a1;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+	height: 30px;
+	width: 100%;
 	top: 0;
 }
 
@@ -98,7 +102,8 @@ body {
 }
 
 #main-widget,
-#right-section {
+#right-section,
+#navbar {
 	background-color: rgba(255, 255, 255, 0.4);
 }
 

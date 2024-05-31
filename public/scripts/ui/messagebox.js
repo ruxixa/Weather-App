@@ -4,10 +4,23 @@ export const messageboxClose = document.getElementById('messagebox-close');
 messageboxClose.addEventListener('click', closeMessagebox);
 messagebox.draggable = true;
 
+/**
+ * Closes the message box
+ * 
+ * @returns { void }
+ */
 export function closeMessagebox() {
   messagebox.style.display = 'none';
 }
 
+/**
+ * Displays a message box with the given header and message
+ * 
+ * @param { string } header 
+ * @param { string } message 
+ * 
+ * @returns { void }
+ */
 export function showMessagebox(header, message) {
   const oldElements = messagebox.querySelectorAll('.message-content');
   oldElements.forEach(element => element.remove());
