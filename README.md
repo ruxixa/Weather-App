@@ -1,6 +1,6 @@
 # Weather App
 
-A simple weather application built using electron.js framework
+Weather desktop app created using electron.js framework 
 
 ## Demo
 ![DEMO](assets/weather.png)
